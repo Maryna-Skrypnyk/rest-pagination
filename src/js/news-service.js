@@ -1,4 +1,6 @@
-const API_KEY = '4330ebfabc654a6992c2aa792f3173a3';
+import dotenv from 'dotenv';
+dotenv.config();
+const API_KEY = process.env.API_KEY;
 const BASE_URL = 'https://newsapi.org/v2';
 const options = {
   headers: {
